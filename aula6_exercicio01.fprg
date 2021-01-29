@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Cliente"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-26 08:38:11 "/>
+        <attribute name="created" value="Q2xpZW50ZTtERVNLVE9QLTNKOVZNS0Q7MjAyMS0wMS0yNjsiMDg6MzE6MjYgIjsyOTY4"/>
+        <attribute name="edited" value="Q2xpZW50ZTtERVNLVE9QLTNKOVZNS0Q7MjAyMS0wMS0yNjsiMDg6Mzg6MTEgIjsxOzMwNzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="num, cont, res" type="Integer" array="False" size=""/>
+            <output expression="&quot;Digite o n&#250;mero da tabuada desejada:&quot;" newline="True"/>
+            <input variable="num"/>
+            <assign variable="cont" expression="1"/>
+            <while expression="cont&lt;=10">
+                <assign variable="res" expression="num*cont"/>
+                <output expression="num &amp; &quot; x &quot; &amp; cont &amp; &quot; = &quot; &amp; res" newline="True"/>
+                <assign variable="cont" expression="cont+1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

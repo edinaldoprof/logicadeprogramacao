@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Professor"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-01-26 02:10:28 "/>
+        <attribute name="created" value="UHJvZmVzc29yO0RFU0tUT1AtSzMwN0hMSTsyMDIxLTAxLTI2OyIwMTozNTo1MSAiOzMxODA="/>
+        <attribute name="edited" value="UHJvZmVzc29yO0RFU0tUT1AtSzMwN0hMSTsyMDIxLTAxLTI2OyIwMjoxMDoyOCAiOzE7MzI4Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="jan, fev, mar, abr, total, media, bonus" type="Real" array="False" size=""/>
+            <input variable="jan"/>
+            <input variable="fev"/>
+            <input variable="mar"/>
+            <input variable="abr"/>
+            <assign variable="total" expression="(jan+fev+mar+abr)"/>
+            <assign variable="media" expression="total/4"/>
+            <if expression="media&gt;=5000">
+                <then>
+                    <assign variable="bonus" expression="total*0.1"/>
+                    <output expression="&quot;Meta alcansada com sucesso, seu b&#244;nus ser&#225; de 10% que d&#225; um valor de R$ &quot; &amp; bonus" newline="True"/>
+                </then>
+                <else>
+                    <assign variable="bonus" expression="total*0.03"/>
+                    <output expression="&quot;Como voc&#234; n&#227;o bateu a meta a comiss&#227;o &#233; de 3% que d&#225; um valor de R$ &quot; &amp; bonus" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
